@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/jquery.signalR-2.2.2.min.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/app.js"></script>
+    <script src="Scripts/appservice.js"></script>
+    <script src="Scripts/IndexController.js"></script>
+
+
+    <title>Clock</title>
+</head>
+<body>
+    <div class="row" ng-controller="IndexController">
+        <div class="col-lg-3 col-md-6">
+            <div class="panel">
+                <h1>HH : MM : SS : MS</h1>
+                <div class="panel-body">
+                    <h2>{{currentHour}} : {{currentMinute}} : {{currentSecond}} : {{currentMilisecond}}</h2>                   
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
